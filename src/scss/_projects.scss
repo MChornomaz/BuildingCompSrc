@@ -1,0 +1,145 @@
+.project {
+    padding-top: 8.9rem;
+    padding-bottom: 13rem;
+
+    @media screen and (max-width: 900px) {
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 2rem 0 3rem;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    &__heading {
+        margin: 0;
+    }
+
+    &__content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(20rem, 1fr));
+        grid-gap: 3rem;
+        transition: all .4s;
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(2, minmax(20rem, 1fr));
+        }
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &--hidden {
+            height: 0;
+            opacity: 0;
+            margin: 0;
+            transition: all .7s;
+        }
+    }
+
+    &__card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        overflow: hidden;
+    }
+
+    &__description {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        z-index: 3;
+
+        @media screen and (max-width: 600px) {
+            bottom: 0.2rem;
+        }
+
+    }
+
+    &__image {
+        border-radius: 2rem;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__location {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: $color-main-white;
+        margin-top: 1rem;
+
+        @media screen and (max-width: 900px) {
+            font-size: 1.4vw;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 2vw;
+            text-align: center;
+            margin-top: 0;
+
+            svg {
+                height: 3vw;
+            }
+        }
+    }
+}
+
+.project-controls {
+    width: 16rem;
+    height: 1rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    @media screen and (max-width: 600px) {
+        margin-top: 3rem;
+    }
+
+    &__block {
+        width: 3rem;
+        position: relative;
+
+        &--active {
+            width: 4rem;
+        }
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        background-color: rgba(17, 16, 16, 0.23);
+        width: 100%;
+        height: 1rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgba(17, 16, 16, 0.5);
+        }
+    }
+}
+
+.project-controls__input:checked~.project-controls__label {
+    background-color: $color-main-black;
+}

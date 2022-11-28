@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>E-commerce</title>
+</head>
+
+
+
+<body>
+    <header class="header" id="home">
+    <div class="header__background"></div>
+    <div class="container main-container">
+        <nav class="navigation">
+            <div class="navigation__logo">
+                <img src="img/Logo.png" alt="Company logo" class="navigation__logo--img">
+            </div>
+            <div class="navigation-burger">
+                <input type="checkbox" class="navigation-burger__checkbox" id="navi-toggle">
+                <label for="navi-toggle" class="navigation-burger__button" id="burger-label">
+                    <span class="navigation-burger__icon"></span>
+                </label>
+                <div class="navigation-burger__background">&nbsp;</div>
+                <nav class="navigation-burger__nav">
+                    <ul class="navigation-burger__list">
+                        <li class="navigation-burger__item"><a href="#home" class="navigation-burger__link">Home</a>
+                        </li>
+                        <li class="navigation-burger__item"><a href="#equipment" class="navigation-burger__link">Equipment</a>
+                        </li>
+                        <li class="navigation-burger__item"><a href="#products" class="navigation-burger__link">Products &
+                                Services</a>
+                        </li>
+                        <li class="navigation-burger__item"><a href="#showrooms" class="navigation-burger__link">Showrooms</a>
+                        </li>
+                        <li class="navigation-burger__item"><a href="#all-services" class="navigation-burger__link">All Services</a>
+                        </li>
+                        <li class="navigation-burger__item"><a href="#media" class="navigation-burger__link">Media</a></li>
+                        <li class="navigation-burger__item"><a href="#contacts" class="navigation-burger__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#home" class="navigation__link navigation__link--active">Home</a></li>
+                <li class="navigation__item"><a href="#equipment" class="navigation__link">Equipment</a></li>
+                <li class="navigation__item"><a href="#products" class="navigation__link">Products & Services</a></li>
+                <li class="navigation__item"><a href="#showrooms" class="navigation__link">Showrooms</a></li>
+                <li class="navigation__item"><a href="#all-services" class="navigation__link">All Services</a></li>
+                <li class="navigation__item"><a href="#media" class="navigation__link">Media</a></li>
+                <li class="navigation__item"><a href="#contacts" class="navigation__link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="main-slider">
+            <div class="main-slider__items">
+                <div class="main-slider__content" id="slide-1">
+                    <div class="main-slider__left">
+                        <h2 class="main-slider__heading">New generation ceramic tile</h2>
+                        <p class="main-slider__text">
+                            Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus
+                            maecenas
+                            consequat. Elementum
+                            interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit
+                            aliquet at. Magna nam platea
+                            justo.
+                        </p>
+                        <button class="main-slider__btn">Learn more</button>
+                    </div>
+                    <div class="main-slider__right">
+                        <video src="./img/living.mp4" class="main-slider__video main-slider__video--1 video"
+                            poster="img/main-slider-img-1.jpg"></video>
+                        <div class="main-slider__play-btn play-btn">
+                            <img src="img/Play-btn.png" alt="video play button" class="main-slider__play-icon play-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-slider__content main-slider__content--hidden" id="slide-2">
+                    <div class="main-slider__left">
+                        <h2 class="main-slider__heading">New construction technology</h2>
+                        <p class="main-slider__text">
+                            Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus
+                            maecenas
+                            consequat. Elementum
+                            interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit
+                            aliquet at. Magna nam platea
+                            justo.
+                        </p>
+                        <button class="main-slider__btn">Learn more</button>
+                    </div>
+                    <div class="main-slider__right">
+                        <video src="./img/pool.mp4" class="main-slider__video main-slider__video--1 video"
+                            poster="img/main-slider-img-2.jpg"></video>
+                        <div class="main-slider__play-btn play-btn">
+                            <img src="img/Play-btn.png" alt="video play button" class="main-slider__play-icon play-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-slider__content main-slider__content--hidden" id="slide-3">
+                    <div class="main-slider__left">
+                        <h2 class="main-slider__heading">Make dreams come true</h2>
+                        <p class="main-slider__text">
+                            Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus
+                            maecenas
+                            consequat. Elementum
+                            interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit
+                            aliquet at. Magna nam platea
+                            justo.
+                        </p>
+                        <button class="main-slider__btn">Learn more</button>
+                    </div>
+                    <div class="main-slider__right">
+                        <video src="./img/bath.mp4" class="main-slider__video main-slider__video--1 video"
+                            poster="img/main-slider-img-3.jpg"></video>
+                        <div class="main-slider__play-btn play-btn">
+                            <img src="img/Play-btn.png" alt="video play button" class="main-slider__play-icon play-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-slider__content main-slider__content--hidden" id="slide-4">
+                    <div class="main-slider__left">
+                        <h2 class="main-slider__heading">Constructing really smart houses</h2>
+                        <p class="main-slider__text">
+                            Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus
+                            maecenas
+                            consequat. Elementum
+                            interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit
+                            aliquet at. Magna nam platea
+                            justo.
+                        </p>
+                        <button class="main-slider__btn">Learn more</button>
+                    </div>
+                    <div class="main-slider__right">
+                        <video src="./img/kitchen.mp4" class="main-slider__video main-slider__video--1 video"
+                            poster="img/main-slider-img-4.jpg"></video>
+                        <div class="main-slider__play-btn play-btn">
+                            <img src="img/Play-btn.png" alt="video play button" class="main-slider__play-icon play-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider__controls">
+                <div class="controls__block">
+                    <input type="radio" name="main-slider" class="controls__input" id="main-slider--1" checked>
+                    <label class="controls__label" for="main-slider--1"></label>
+                </div>
+                <div class="controls__block controls__block--active">
+                    <input type="radio" name="main-slider" class="controls__input" id="main-slider--2">
+                    <label class="controls__label" for="main-slider--2"></label>
+                </div>
+                <div class="controls__block">
+                    <input type="radio" name="main-slider" class="controls__input" id="main-slider--3">
+                    <label class="controls__label" for="main-slider--3"></label>
+                </div>
+                <div class="controls__block">
+                    <input type="radio" name="main-slider" class="controls__input" id="main-slider--4">
+                    <label class="controls__label" for="main-slider--4"></label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+    <main class="main">
+        <section class="collection " id="equipment">
+            <div class="container">
+                <h2 class="heading-2">Featured Collection</h2>
+                <div class="collection-slider">
+                    <div class="collection-slider__left-arrow">
+                        <svg width="22" height="39" viewBox="0 0 22 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="left-arrow" opacity="0.5"
+                                d="M22 5.5L8.25 19.25L22 33L19.25 38.5L0 19.25L19.25 0L22 5.5Z" fill="#111010" />
+                        </svg>
+                    </div>
+                    <div class="collection-slider__content">
+                        <div class="collection-slider__items">
+                            <div class="collection-card">
+                                <div class="collection-card__image">
+                                    <img src="./img/card-1.png" alt="Air Insulated Switchgear"
+                                        class="collection-card__img">
+                                </div>
+                                <h4 class="heading-4">Air Insulated Switchgear</h4>
+                                <p class="collection-card__text">
+                                    Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius
+                                    lobortis primis tortor.
+                                </p>
+                                <button class="btn">View Collection</button>
+                            </div>
+                            <div class="collection-card">
+                                <div class="collection-card__image">
+                                    <img src="./img/card-2.png" alt="Mira Switches" class="collection-card__img">
+                                </div>
+                                <h4 class="heading-4">Mira Switches</h4>
+                                <p class="collection-card__text">
+                                    Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius
+                                    lobortis
+                                    primis tortor.
+                                </p>
+                                <button class="btn">View Collection</button>
+                            </div>
+
+                            <div class="collection-card">
+                                <div class="collection-card__image">
+                                    <img src="./img/card-3.png" alt="Transformer" class="collection-card__img">
+                                </div>
+                                <h4 class="heading-4">Transformers</h4>
+                                <p class="collection-card__text">
+                                    Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius
+                                    lobortis
+                                    primis tortor.
+                                </p>
+                                <button class="btn">View Collection</button>
+                            </div>
+                            <div class="collection-card">
+                                <div class="collection-card__image">
+                                    <img src="./img/card-1.png" alt="Air Insulated Switchgear"
+                                        class="collection-card__img">
+                                </div>
+                                <h4 class="heading-4">Air Insulated Switchgear</h4>
+                                <p class="collection-card__text">
+                                    Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius
+                                    lobortis primis tortor.
+                                </p>
+                                <button class="btn">View Collection</button>
+                            </div>
+                            <div class="collection-card">
+                                <div class="collection-card__image">
+                                    <img src="./img/card-2.png" alt="Mira Switches" class="collection-card__img">
+                                </div>
+                                <h4 class="heading-4">Mira Switches</h4>
+                                <p class="collection-card__text">
+                                    Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius
+                                    lobortis
+                                    primis tortor.
+                                </p>
+                                <button class="btn">View Collection</button>
+                            </div>
+
+                            <div class="collection-card">
+                                <div class="collection-card__image">
+                                    <img src="./img/card-3.png" alt="Transformer" class="collection-card__img">
+                                </div>
+                                <h4 class="heading-4">Transformers</h4>
+                                <p class="collection-card__text">
+                                    Ante mus blandit sapien sociosqu per consequat ad. Aenean habitasse interdum letius
+                                    lobortis
+                                    primis tortor.
+                                </p>
+                                <button class="btn">View Collection</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-slider__right-arrow">
+                        <svg width="22" height="39" viewBox="0 0 22 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="right-arrow" d="M0 5.5L13.75 19.25L0 33L2.75 38.5L22 19.25L2.75 0L0 5.5Z"
+                                fill="#111010" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products" id="products">
+            <div class="container">
+                <h2 class="heading-2 heading-2--white">Products</h2>
+                <div class="products__content">
+                    <div class="products__card products__card--big">
+                        <img src="./img/product-1.jpg" alt="Bedroom Tiles" class="products__img">
+                        <div class="products__description">
+                            <h3 class="heading-3">Bedroom Tiles</h3>
+                            <p class="products__text">
+                                Ante mus blandit sapien sociosqu per consequat ad.
+                            </p>
+                        </div>
+                        <div class="gradient"></div>
+                    </div>
+                    <div class="products__card">
+                        <img src="./img/product-2.jpg" alt="Bathroom Tiles" class="products__img">
+                        <div class="products__description">
+                            <h3 class="heading-3">Bathroom Tiles</h3>
+                            <p class="products__text">
+                                Ante mus blandit sapien sociosqu per consequat ad.
+                            </p>
+                        </div>
+                        <div class="gradient"></div>
+                    </div>
+                    <div class="products__card products__card--last">
+                        <img src="./img/product-3.jpg" alt="Outdoor Tiles" class="products__img">
+                        <div class="products__description">
+                            <h3 class="heading-3">Outdoor Tiles</h3>
+                            <p class="products__text">
+                                Ante mus blandit sapien sociosqu per consequat ad.
+                            </p>
+                        </div>
+                        <div class="gradient"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <h2 class="heading-2">Services</h2>
+                <div class="service__card">
+                    <div class="service__image">
+                        <img src="./img/service-1.jpg" alt="worker" class="service__img">
+                    </div>
+                    <div class="service__description">
+                        <h3 class="service__heading">Measurement Service</h3>
+                        <p class="service__text">
+                            Our sales support team will come & measure your property in order to ensure accuracy in
+                            design and help you calculate
+                            how many tiles you need. Please call our toll free number 800 122 22 20 to arrange a visit,
+                            or visit one of our
+                            Showrooms.
+                        </p>
+                        <button class="btn service__btn">Learn more</button>
+                    </div>
+                </div>
+                <div class="service__card">
+                    <div class="service__description">
+                        <h3 class="service__heading">Product Advice</h3>
+                        <p class="service__text">
+                            Consult our professionals by calling our toll free number 800 122 22 20 or by visiting one
+                            of our showrooms where our
+                            qualified sales team will offer you product advice highlighting the latest interior and
+                            exterior trends.
+                        </p>
+                        <button class="btn service__btn">Learn more</button>
+                    </div>
+                    <div class="service__image service__image--left">
+                        <img src="./img/service-2.jpg" alt="consultant" class="service__img">
+                    </div>
+                </div>
+                <div class="service__card">
+                    <div class="service__image">
+                        <img src="./img/service-3.jpg" alt="living room" class="service__img">
+                    </div>
+                    <div class="service__description">
+                        <h3 class="service__heading">Interior Design</h3>
+                        <p class="service__text">
+                            Our sales support team will come & measure your property in order to ensure accuracy in
+                            design and help you calculate
+                            how many tiles you need. Please call our toll free number 800 122 22 20 to arrange a visit,
+                            or visit one of our
+                            Showrooms.
+                        </p>
+                        <button class="btn service__btn">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reasons">
+            <div class="container reasons__content">
+                <div class="reasons__video">
+                    <video src="./img/worker.mp4" class="reasons__vid video" poster="img/reasons.jpg"></video>
+                    <div class="main-slider__play-btn play-btn">
+                        <img src="img/Play-btn.png" alt="video play button" class="main-slider__play-icon play-icon">
+                    </div>
+                </div>
+                <div class="reasons__description">
+                    <h2 class="heading-2">Why Choose Us?</h2>
+                    <p class="reasons__text">
+                        Neque quisque sollicitudin tempor vestibulum elit taciti. Sagittis tempor consequat turpis.
+                        Aenean curae elementum
+                        vestibulum dapibus vitae laoreet. Bibendum suspendisse himenaeos malesuada. Nisl taciti si
+                        platea dui. Euismod malesuada
+                        facilisis duis lobortis aliquet massa. Tincidunt vivamus ac consectetuer molestie pharetra.
+                        Sodales pulvinar non
+                        habitant.
+                    </p>
+                    <p class="reasons__text">
+                        Nisl taciti si platea dui. Euismod malesuada facilisis duis lobortis aliquet massa. Tincidunt
+                        vivamus ac consectetuer
+                        molestie pharetra. Sodales pulvinar non habitant.
+                    </p>
+                    <ul class="reasons__list">
+                        <li class="reasons__list-item">SUSTAINABLY SOURCED</li>
+                        <li class="reasons__list-item"> EASY TO RECYCLE</li>
+                        <li class="reasons__list-item">IMPROVED HOME RESALE VALUE</li>
+                        <li class="reasons__list-item">A SMART WAY TO LEED CERTIFICATION</li>
+                    </ul>
+                    <button class="btn-black"><span class="btn-black__text">Learn More</span></button>
+                </div>
+            </div>
+        </section>
+        <section class="project" id="showrooms">
+            <div class="container">
+                <div class="project__title">
+                    <h2 class="heading-2 project__heading">Projects</h2>
+                    <button class="btn">All Projects</button>
+                </div>
+                <div class="projects__slider">
+                    <div class="project__content" id="projects-slide-1">
+                        <div class="project__card">
+                            <img src="./img/project-1.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-2.jpg" alt="Aenean Tempus ipsum" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean Tempus</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-3.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-4.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-5.jpg" alt="Aenean Tempus ipsum" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean Tempus </h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-6.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                    </div>
+                    <div class="project__content project__content--hidden" id="projects-slide-2">
+
+
+                        <div class="project__card">
+                            <img src="./img/project-3.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-4.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-2.jpg" alt="Aenean Tempus ipsum" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean Tempus</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-5.jpg" alt="Aenean Tempus ipsum" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean Tempus </h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-6.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-1.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                    </div>
+                    <div class="project__content project__content--hidden" id="projects-slide-3">
+                        <div class="project__card">
+                            <img src="./img/project-1.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-2.jpg" alt="Aenean Tempus ipsum" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean Tempus</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-3.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-4.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-5.jpg" alt="Aenean Tempus ipsum" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean Tempus </h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-6.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                    </div>
+                    <div class="project__content project__content--hidden" id="projects-slide-4">
+                        <div class="project__card">
+                            <img src="./img/project-5.jpg" alt="Aenean Tempus ipsum" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean Tempus </h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-6.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-4.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-1.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-3.jpg" alt="Aenean habitasse" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean habitasse</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                        <div class="project__card">
+                            <img src="./img/project-2.jpg" alt="Aenean Tempus ipsum" class="project__image">
+                            <div class="project__description">
+                                <h3 class="heading-3">Aenean Tempus</h3>
+                                <p class="project__location">
+                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.16211 0C3.2066 0 0 3.20658 0 7.16211C0 8.48494 0.258922 9.8512 1.00195 10.8359L7.16211 19L13.3223 10.8359C13.9972 9.94151 14.3242 8.3603 14.3242 7.16211C14.3242 3.20658 11.1176 0 7.16211 0ZM7.16211 4.14813C8.82645 4.14813 10.1761 5.49778 10.1761 7.1621C10.1761 8.82645 8.82645 10.1761 7.16211 10.1761C5.49778 10.1761 4.14814 8.82645 4.14814 7.16211C4.14814 5.49778 5.49778 4.14813 7.16211 4.14813Z"
+                                            fill="white" />
+                                    </svg>
+                                    Riyadh, Saudi Arabia
+                                </p>
+                            </div>
+                            <div class="gradient"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-controls">
+                    <div class="project-controls__block project-controls__block--active">
+                        <input type="radio" name="project" class="project-controls__input" id="project--1" checked>
+                        <label class="project-controls__label" for="project--1"></label>
+                    </div>
+                    <div class="project-controls__block ">
+                        <input type="radio" name="project" class="project-controls__input" id="project--2">
+                        <label class="project-controls__label" for="project--2"></label>
+                    </div>
+                    <div class="project-controls__block">
+                        <input type="radio" name="project" class="project-controls__input" id="project--3">
+                        <label class="project-controls__label" for="project--3"></label>
+                    </div>
+                    <div class="project-controls__block">
+                        <input type="radio" name="project" class="project-controls__input" id="project--4">
+                        <label class="project-controls__label" for="project--4"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="all-services" id="all-services">
+            <div class="container">
+                <h2 class="heading-2 heading-2--white">All Services</h2>
+                <div class="all-services__content">
+                    <div class="all-services__card">
+                        <img src="./img/all-1.jpg" alt="Bathroom" class="all-services__image">
+                        <h3 class="heading-3 all-services__heading">Bathroom</h3>
+                        <div class="gradient"></div>
+                    </div>
+                    <div class="all-services__card">
+                        <img src="./img/all-2.jpg" alt="Kitchen" class="all-services__image">
+                        <h3 class="heading-3 all-services__heading">Kitchen</h3>
+                        <div class="gradient"></div>
+                    </div>
+                    <div class="all-services__card">
+                        <img src="./img/all-3.jpg" alt="Living Room" class="all-services__image">
+                        <h3 class="heading-3 all-services__heading">Living Room</h3>
+                        <div class="gradient"></div>
+                    </div>
+                    <div class="all-services__card">
+                        <img src="./img/all-4.jpg" alt="Bedroom" class="all-services__image">
+                        <h3 class="heading-3 all-services__heading">Bedroom</h3>
+                        <div class="gradient"></div>
+                    </div>
+                    <div class="all-services__card">
+                        <img src="./img/all-5.jpg" alt="Outdoor" class="all-services__image">
+                        <h3 class="heading-3 all-services__heading">Outdoor</h3>
+                        <div class="gradient"></div>
+                    </div>
+                    <div class="all-services__card">
+                        <img src="./img/all-6.jpg" alt="Commercial services" class="all-services__image">
+                        <h3 class="heading-3 all-services__heading">Commercial</h3>
+                        <div class="gradient"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="media" id="media">
+            <div class="container">
+                <h2 class="heading-2">Latest Media</h2>
+                <div class="media__content">
+                    <div class="media__card media__card--big">
+                        <div class="media__image">
+                            <img src="./img/media.jpg" alt="morern house" class="media__img">
+                        </div>
+                        <h5 class="media__heading">Alfanar exa corp innovation at Expo 2020 with the Italian Pavilion
+                        </h5>
+                        <p class="media__text">
+                            Sociosqu nostra ipsum curabitur lacus diam. Ipsum sollicitudin eros ullamcorper adipiscing
+                            penatibus habitant ex
+                            nascetur.
+                        </p>
+                        <button class="btn">read more</button>
+                    </div>
+                    <div class="media__card">
+                        <h5 class="media__heading">Alfanar exa corp innovation at Expo 2020 with the Italian Pavilion
+                        </h5>
+                        <p class="media__text">
+                            Sociosqu nostra ipsum curabitur lacus diam. Ipsum sollicitudin eros ullamcorper adipiscing
+                            penatibus habitant ex
+                            nascetur.
+                        </p>
+                        <button class="btn">read more</button>
+                    </div>
+                    <div class="media__card">
+                        <h5 class="media__heading">Alfanar exa corp innovation at Expo 2020 with the Italian Pavilion
+                        </h5>
+                        <p class="media__text">
+                            Sociosqu nostra ipsum curabitur lacus diam. Ipsum sollicitudin eros ullamcorper adipiscing
+                            penatibus habitant ex
+                            nascetur.
+                        </p>
+                        <button class="btn">read more</button>
+                    </div>
+                    <div class="media__card">
+                        <h5 class="media__heading">Alfanar exa corp innovation at Expo 2020 with the Italian Pavilion
+                        </h5>
+                        <p class="media__text">
+                            Sociosqu nostra ipsum curabitur lacus diam. Ipsum sollicitudin eros ullamcorper adipiscing
+                            penatibus habitant ex
+                            nascetur.
+                        </p>
+                        <button class="btn">read more</button>
+                    </div>
+                    <div class="media__card">
+                        <h5 class="media__heading">Alfanar exa corp innovation at Expo 2020 with the Italian Pavilion
+                        </h5>
+                        <p class="media__text">
+                            Sociosqu nostra ipsum curabitur lacus diam. Ipsum sollicitudin eros ullamcorper adipiscing
+                            penatibus habitant ex
+                            nascetur.
+                        </p>
+                        <button class="btn">read more</button>
+                    </div>
+                </div>
+                <button class="btn-black media__btn"><span class="btn-black__text"> view all</span></button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+    <div class="container footer__content">
+
+        <div class="footer__social">
+            <img src="./img/Logo.png" alt="Company logo" class="footer__logo">
+            <h6 class="footer__heading">Social Media</h6>
+            <div class="footer__social-icons">
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.46 16H5.39V8.7H7.84L8.21 5.86H5.39V4.04C5.39 3.22 5.62 2.66 6.8 2.66H8.31V0.11C8.05 0.0799999 7.16 0 6.12 0C3.94 0 2.46 1.33 2.46 3.76V5.86H0V8.7H2.46V16Z"
+                        fill="white" />
+                </svg>
+                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.1925 1.72C17.7025 2.45 17.0825 3.1 16.3625 3.62C16.3725 3.77 16.3725 3.93 16.3725 4.09C16.3725 8.94 12.6825 14.53 5.9425 14.53C3.8725 14.53 1.9425 13.92 0.3125 12.88C0.6025 12.91 0.8925 12.93 1.1925 12.93C2.9125 12.93 4.4925 12.34 5.7425 11.36C4.97784 11.3442 4.23722 11.0899 3.62408 10.6328C3.01093 10.1756 2.55589 9.53834 2.3225 8.81C2.5425 8.85 2.7725 8.88 3.0125 8.88C3.3425 8.88 3.6725 8.83 3.9725 8.75C3.1431 8.57974 2.39778 8.12869 1.86222 7.4729C1.32666 6.8171 1.03361 5.99669 1.0325 5.15V5.11C1.5325 5.38 2.0925 5.55 2.6925 5.57C2.1903 5.23314 1.77886 4.7777 1.49456 4.24399C1.21026 3.71027 1.06186 3.11471 1.0625 2.51C1.0625 1.84 1.2425 1.21 1.5625 0.67C3.3725 2.89 6.0725 4.35 9.1225 4.5C9.0625 4.23 9.0225 3.95 9.0225 3.66C9.02515 2.68839 9.41297 1.75748 10.1009 1.07138C10.7889 0.385283 11.7209 -3.60686e-06 12.6925 0C13.7525 0 14.7025 0.44 15.3725 1.16C16.2025 0.99 16.9925 0.69 17.7025 0.27C17.4225 1.12 16.8425 1.84 16.0825 2.29C16.8111 2.21036 17.5229 2.01807 18.1925 1.72Z"
+                        fill="white" />
+                </svg>
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.1414 5.324C18.1313 4.56662 17.9895 3.81678 17.7224 3.108C17.4908 2.51015 17.1369 1.9672 16.6836 1.51383C16.2302 1.06046 15.6873 0.706651 15.0894 0.475C14.3897 0.212357 13.6506 0.0703413 12.9034 0.0550001C11.9414 0.0120001 11.6364 0 9.19441 0C6.75241 0 6.43941 6.70552e-08 5.48441 0.0550001C4.73757 0.0704541 3.99875 0.212468 3.29941 0.475C2.70146 0.706489 2.15843 1.06024 1.70504 1.51363C1.25165 1.96702 0.897895 2.51006 0.666406 3.108C0.403237 3.80713 0.261529 4.54611 0.247406 5.293C0.204406 6.256 0.191406 6.561 0.191406 9.003C0.191406 11.445 0.191406 11.757 0.247406 12.713C0.262406 13.461 0.403406 14.199 0.666406 14.9C0.898284 15.4978 1.2523 16.0406 1.70584 16.4938C2.15938 16.947 2.70247 17.3006 3.30041 17.532C3.99784 17.8052 4.73678 17.9574 5.48541 17.982C6.44841 18.025 6.75341 18.038 9.19541 18.038C11.6374 18.038 11.9504 18.038 12.9054 17.982C13.6526 17.9673 14.3918 17.8256 15.0914 17.563C15.6891 17.3311 16.2319 16.9772 16.6852 16.5238C17.1386 16.0705 17.4925 15.5277 17.7244 14.93C17.9874 14.23 18.1284 13.492 18.1434 12.743C18.1864 11.781 18.1994 11.476 18.1994 9.033C18.1974 6.591 18.1974 6.281 18.1414 5.324ZM9.18841 13.621C6.63441 13.621 4.56541 11.552 4.56541 8.998C4.56541 6.444 6.63441 4.375 9.18841 4.375C10.4145 4.375 11.5904 4.86207 12.4574 5.72905C13.3243 6.59603 13.8114 7.7719 13.8114 8.998C13.8114 10.2241 13.3243 11.4 12.4574 12.267C11.5904 13.1339 10.4145 13.621 9.18841 13.621ZM13.9954 5.282C13.8538 5.28213 13.7136 5.25434 13.5827 5.20021C13.4519 5.14608 13.333 5.06668 13.2329 4.96655C13.1327 4.86643 13.0533 4.74754 12.9992 4.61669C12.9451 4.48584 12.9173 4.3456 12.9174 4.204C12.9174 4.0625 12.9453 3.92239 12.9994 3.79166C13.0536 3.66093 13.1329 3.54215 13.233 3.44209C13.3331 3.34204 13.4518 3.26267 13.5826 3.20852C13.7133 3.15437 13.8534 3.1265 13.9949 3.1265C14.1364 3.1265 14.2765 3.15437 14.4072 3.20852C14.538 3.26267 14.6568 3.34204 14.7568 3.44209C14.8569 3.54215 14.9362 3.66093 14.9904 3.79166C15.0445 3.92239 15.0724 4.0625 15.0724 4.204C15.0724 4.8 14.5904 5.282 13.9954 5.282Z"
+                        fill="white" />
+                    <path
+                        d="M9.1905 12.0011C10.849 12.0011 12.1935 10.6566 12.1935 8.99812C12.1935 7.33961 10.849 5.99512 9.1905 5.99512C7.53199 5.99512 6.1875 7.33961 6.1875 8.99812C6.1875 10.6566 7.53199 12.0011 9.1905 12.0011Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="footer__item">
+            <h6 class="footer__heading">Products</h6>
+            <div class="footer__text-content">
+                <p class="footer__text"><a href="#" class="footer__link">Sand Stone</a></p>
+                <p class="footer__text"><a href="#" class="footer__link">Stone</a></p>
+                <p class="footer__text"><a href="#" class="footer__link">Cement</a></p>
+                <p class="footer__text"><a href="#" class="footer__link">Soft Stone</a></p>
+            </div>
+        </div>
+        <div class="footer__item">
+            <h6 class="footer__heading">Services</h6>
+            <div class="footer__text-content">
+                <p class="footer__text"><a href="#" class="footer__link">Measurement Service</a></p>
+                <p class="footer__text"><a href="#" class="footer__link">Product Advice</a></p>
+                <p class="footer__text"><a href="#" class="footer__link">Interior Design</a></p>
+            </div>
+        </div>
+        <div class="footer__item">
+            <h6 class="footer__heading">Contact information</h6>
+            <div class="footer__text-content">
+                <p class="footer__address">3181 Al Imam Saud Ibn Abdul Aziz Branch Rd,</p>
+                <p class="footer__address">An Nuzhah, Riyadh 12474,</p>
+                <p class="footer__address">Saudi Arabia</p>
+            </div>
+        </div>
+        <div class="footer__gallery">
+            <div class="footer__image"><img src="../img/footer-1.jpg" alt="" class="footer__img"></div>
+            <div class="footer__image"><img src="../img/footer-2.jpg" alt="" class="footer__img"></div>
+            <div class="footer__image"><img src="../img/footer-3.jpg" alt="" class="footer__img"></div>
+            <div class="footer__image"><img src="../img/footer-4.jpg" alt="" class="footer__img"></div>
+            <div class="footer__image"><img src="../img/footer-5.jpg" alt="" class="footer__img"></div>
+            <div class="footer__image"><img src="../img/footer-6.jpg" alt="" class="footer__img"></div>
+        </div>
+        <p class="footer__copy">Copyright © 2021 | All Rights Reserved.</p>
+        <p class="footer__copy footer__copy--last ">Created with love by <span
+                class="footer__copy-link">thecreation.design</span> </p>
+
+    </div>
+</footer>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

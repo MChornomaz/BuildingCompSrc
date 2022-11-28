@@ -1,0 +1,112 @@
+.service {
+    margin-top: 5rem;
+
+    @media screen and (max-width: 600px) {
+        margin-top: 2rem;
+    }
+
+    &__card {
+        background-color: $color-secondary-grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        border-radius: 3.6rem;
+        overflow: hidden;
+        padding: 2rem;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
+
+        &:first-of-type {
+            margin-top: 5.2rem;
+
+            @media screen and (max-width: 600px) {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: calc(1vw * 1.9);
+        line-height: 160%;
+        color: #000000;
+
+        @media screen and (max-width: 900px) {
+            font-size: 3.5vw;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 4.5vw;
+        }
+    }
+
+    &__image {
+        width: 50%;
+
+        @media screen and (max-width: 900px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 900px) {
+            width: 95%;
+        }
+
+        &--left {
+            @media screen and (max-width: 900px) {
+                order: -1;
+            }
+        }
+
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 1.6rem;
+    }
+
+    &__description {
+        width: 48%;
+        padding-left: 5%;
+
+        @media screen and (max-width: 900px) {
+            width: 90%;
+            margin-top: 2rem;
+        }
+    }
+
+    &__text {
+
+        font-size: calc(1vw * 1.2);
+        line-height: 150%;
+        color: #000000;
+        margin-bottom: 1vw;
+        width: 83%;
+
+        @media screen and (max-width: 900px) {
+            font-size: 2vw;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 3.5vw;
+        }
+    }
+
+    &__btn {
+
+        @media screen and (max-width: 900px) {
+            font-size: 1.5vw;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 2.5vw;
+            border-radius: 0.4rem;
+        }
+    }
+}

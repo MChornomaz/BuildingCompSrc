@@ -1,0 +1,162 @@
+.collection {
+    margin: 0 auto;
+
+    @media screen and (max-width: 900px) {
+        margin-top: -7.5rem;
+    }
+
+}
+
+
+.collection-slider {
+    display: flex;
+    margin-top: 5.4rem;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+        margin-top: 2.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-top: 0.5rem;
+    }
+
+
+    &__left-arrow {
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        @media screen and (max-width: 600px) {
+            padding: 0;
+
+            svg {
+                transform: translateX(-1rem);
+                height: 4rem;
+            }
+        }
+    }
+
+    &__right-arrow {
+        padding: 2rem 0 2rem 1rem;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transform: translateX(2rem);
+
+        @media screen and (max-width: 600px) {
+            padding: 0;
+
+            svg {
+                height: 4rem;
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        padding: 1rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        @media screen and (max-width: 600px) {
+            padding: 0;
+        }
+    }
+
+
+    &__items {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(6, calc(var(--mainSliderContentWidth) / 3 - 30px));
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+        transform: translateX(0);
+        align-content: center;
+        justify-items: center;
+        transition: transform .5s;
+
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(6, calc(var(--mainSliderContentWidth) / 2 - 30px));
+        }
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: repeat(6, calc(var(--mainSliderContentWidth) - 30px));
+        }
+    }
+}
+
+
+.collection-card {
+    width: 100%;
+    height: calc(1vw * 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 45rem;
+    background-color: $color-secondary-grey;
+    border-radius: 3.8rem;
+
+    @media screen and (max-width: 1200px) {
+        height: 35vw;
+    }
+
+    @media screen and (max-width: 900px) {
+        height: 38rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        min-height: max-content;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    &__image {
+        padding: 0 1.6rem;
+        background-color: $color-main-white;
+        border-radius: 1.6rem;
+        margin-bottom: 2.9rem;
+        width: 100%;
+        min-height: 50%;
+        max-width: 38rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+
+    &__img {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 200px;
+    }
+
+
+    &__text {
+        max-width: 100%;
+        font-size: calc(1vw * 1.1);
+        line-height: 160%;
+        text-align: center;
+        color: #3C3C3C;
+        margin-top: 1.5rem;
+        margin-bottom: 1.4rem;
+
+        @media screen and (max-width: 900px) {
+            font-size: calc(1vw * 1.5);
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 2.8vw;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.all-services {
+    background-color: $color-main-black;
+    padding-top: 3.9rem;
+    padding-bottom: 6.1rem;
+
+    @media screen and (max-width: 600px) {
+        padding: 3rem 0;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 3rem;
+        margin-top: 2.7rem;
+
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+
+    &__card {
+        position: relative;
+        width: 100%;
+        border-radius: 2rem;
+        overflow: hidden;
+    }
+
+    &__card:hover &__image{
+        filter: blur(1px) brightness(75%);
+        transform: scale(1.1);
+    }
+
+    &__card:hover &__heading{
+        bottom:50%;
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 2rem;
+        transition: all 0.4s;
+    }
+
+    &__heading {
+        position: absolute;
+        bottom: 2.6rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        transition: all 0.4s;
+    }
+}

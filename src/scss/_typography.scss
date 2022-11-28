@@ -1,0 +1,60 @@
+.heading-2 {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(1vw * 2.5);
+    line-height: 110%;
+    color: $color-main-black;
+    text-align: center;
+
+    &--white {
+        color: $color-main-white;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 4vw;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 6vw;
+    }
+}
+
+.heading-3 {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(1vw * 1.35);
+    line-height: 100%;
+    text-align: center;
+    color: $color-main-white;
+
+    @media screen and (max-width: 900px) {
+        font-size: 1.8vw;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 4vw;
+    }
+}
+
+
+.heading-4 {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(1vw * 1.1);
+    line-height: 108%;
+    text-align: center;
+    color: $color-main-black;
+
+    @media screen and (max-width: 900px) {
+        font-size: 1.5vw;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 3.5vw;
+    }
+}
